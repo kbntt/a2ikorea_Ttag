@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <title>상품수정</title>
+    
+    <link rel="stylesheet" href="./css/prize_revise.css">
+</head>
+
+    
+    
+<body>
+    <div id="main_wrap">
+<!--header-->
+    <div id="header">
+        <div id="logo"><a href="../admin_main.html">logo_area</a></div>
+    </div>
+
+<!--사이드 메뉴-->
+    <div id="menu" alt="메뉴">
+        <div class="btn" alt="상품관리"><a href="#">상품관리</a>
+            <ul class="sub">
+                <li><a href="prize_reg.html" alt="상품등록">상품등록</a></li>
+                <li><a href="prize_list.html" alt="상품목록">상품목록</a></li>
+                <li><a href="ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="주문관리"><a href="#">주문관리</a>
+            <ul class="sub">
+                <li><a href="order_list.html" alt="주문내역">주문내역</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="고객관리"><a href="#">고객관리</a>
+            <ul class="sub">
+                <li><a href="cus_list.html" alt="고객목록">고객목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="게시판관리"><a href="#">게시판관리</a>
+            <ul class="sub">
+                <li><a href="prize_review.html" alt="상품후기목록">상품후기목록</a></li>
+                <li><a href="prize_inquiry.html" alt="상품문의목록">상품문의목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="매출분석"><a href="#">매출분석</a>
+            <ul class="sub">
+                <li><a href="sales_stat.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!--main-->
+    <div id="main">
+        <div class="title" alt="타이틀">상품수정</div>
+<!--section1-->
+        <fieldset>
+        <legend>
+            <p>기존정보</p>
+        </legend>
+        
+            <ul class="info" alt="기존정보">
+                <li>
+                    <label class="title" alt="상품코드">상품코드</label>
+                    <label class="code_num" alt="코드번호">100001</label>
+                </li>
+                <li>
+                    <label class="title" alt="상품명">상품명&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" id="name" value="벽지1" minlength="0" maxlength="250">&nbsp;&#91;0&#47;250&#93;
+                </li>
+                <li>
+                    <label class="title" alt="판매가">판매가&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="30,000" id="num">&nbsp;원
+                </li>
+                <li>
+                    <label class="title" alt="공급가">공급가&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="25,000" id="num">&nbsp;원
+                </li>
+                <li>
+                    <label class="title" alt="배송료">배송료&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="2,000" id="num">&nbsp;원
+                </li>
+                <li>
+                    <label class="title" alt="수량">수량&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="200" id="num">&nbsp;개
+                </li>
+                <li>
+                    <label class="title" alt="상품요약설명">상품&nbsp;요약설명</label>
+                    <input type="text" value="상품요약" id="info" minlength="0" maxlength="250">&nbsp;&#91;0&#47;250&#93;
+                </li>
+                <li>
+                    <label class="title" alt="대표이미지">대표이미지</label>
+                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                </li>
+                <li>
+                    <label class="title" alt="추가이미지1">추가이미지&nbsp;1</label>
+                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                </li>
+                <li>
+                    <label class="title" alt="추가이미지2">추가이미지&nbsp;2</label>
+                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                </li>
+                <li>
+                    <label class="title" alt="추가이미지3">추가이미지&nbsp;3</label>
+                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                </li>
+            </ul>
+        </fieldset>
+<!--section2-->
+        <fieldset>
+        <legend>
+            <p>진열설정</p>
+        </legend>
+        
+            <ul class="info" alt="진열설정">
+                <li>
+                    <label class="title" alt="진열상태">진열상태</label>
+                    <label class="btn"><input type="radio" name="display" value="on" checked>&nbsp;진열함</label>
+                    <label class="btn"><input type="radio" name="display" value="off">&nbsp;진열안함</label>
+                </li>
+                <li>
+                    <label class="title" alt="판매상태">판매상태</label>
+                    <label class="btn"><input type="radio" name="sale" value="on" checked>&nbsp;판매함</label>
+                    <label class="btn"><input type="radio" name="sale" value="off">&nbsp;판매안함</label>
+                </li>
+                <li>
+                    <label class="title" alt="상품분류">상품분류</label>
+                    <label class="btn"><input type="radio" name="kind" value="on" checked>&nbsp;벽지</label>
+                    <label class="btn"><input type="radio" name="kind" value="off">&nbsp;페인트</label>
+                </li>
+                <li>
+                    <label class="title" alt="상품상세설명">상품&nbsp;상세설명</label>
+                    <div class="setting_box" style="overflow: scroll"></div>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <div id="btn_box">
+            <input type="submit" value="저장" alt="저장" onclick="location.href='prize_list.html'">&nbsp;&nbsp;<input type="button" value="목록" alt="목록" onclick="location.href='prize_list.html'">
+        </div>
+    </div>
+    </div>
+</body>
+    
+
+</html>

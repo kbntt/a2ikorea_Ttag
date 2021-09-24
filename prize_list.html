@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <title>상품목록</title>
+    
+    <link rel="stylesheet" href="css/prize_list.css">
+</head>
+    
+<body>
+    <div id="main_wrap">
+    <div id="header">
+        <div id="logo"><a href="../admin_main.html">logo_area</a></div>
+    </div>
+<!--사이드 메뉴-->
+    <div id="menu" alt="메뉴">
+        <div class="btn" alt="상품관리"><a href="#">상품관리</a>
+            <ul class="sub">
+                <li><a href="prize_reg.html" alt="상품등록">상품등록</a></li>
+                <li><a href="prize_list.html" alt="상품목록">상품목록</a></li>
+                <li><a href="ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="주문관리"><a href="#">주문관리</a>
+            <ul class="sub">
+                <li><a href="order_list.html" alt="주문내역">주문내역</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="고객관리"><a href="#">고객관리</a>
+            <ul class="sub">
+                <li><a href="cus_list.html" alt="고객목록">고객목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="게시판관리"><a href="#">게시판관리</a>
+            <ul class="sub">
+                <li><a href="prize_review.html" alt="상품후기목록">상품후기목록</a></li>
+                <li><a href="prize_inquiry.html" alt="상품문의목록">상품문의목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="매출분석"><a href="#">매출분석</a>
+            <ul class="sub">
+                <li><a href="sales_stat.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
+            </ul>
+        </div>
+    </div>
+        
+    <!--main-->
+    <div id="main">
+        <div class="title" alt="타이틀">상품목록</div>
+<!--section1-->
+        <fieldset>
+        
+            <ul class="info" alt="기존정보">
+                <li>
+                    <label class="title" alt="상품분류별">상품분류별</label>
+                    <label class="select" alt="선택">
+                        <select class="s1">
+                            <option>전체</option>
+                            <option>벽지</option>
+                            <option>페인트</option>
+                        </select>
+                    </label>
+                    <label class="check" alt="체크">
+                        <input type="radio">&nbsp;진열함
+                    </label>
+                    <label class="check" alt="체크">
+                        <input type="radio">&nbsp;진열안함
+                    </label>
+                    <label class="title" alt="등록일">등록일</label>
+                    <label class="date" alt="날짜">
+                        <input type="date">&nbsp;&#126;&nbsp;<input type="date">
+                    </label>
+                    <label class="btn" alt="조회">
+                        <input type="submit" value="조회">
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <fieldset>
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <th>상품코드</th>
+                    <th>이미지</th>
+                    <th>상품명</th>
+                    <th>재고</th>
+                    <th>판매가격</th>
+                    <th>공급가격</th>
+                    <th>진열여부</th>
+                    <th>삭제</th>
+                    <th>수정</th>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td>100001</td>
+                    <td>이미지</td>
+                    <td>벽지1</td>
+                    <td>50</td>
+                    <td>10,000</td>
+                    <td>7,000</td>
+                    <td>Y</td>
+                    <td class="btn"><input type="button" value="삭제"></td>
+                    <td class="btn"><input type="button" value="수정" onclick="location.href='prize_revise.html'"></td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>100002</td>
+                    <td>이미지</td>
+                    <td>벽지2</td>
+                    <td>50</td>
+                    <td>10,000</td>
+                    <td>7,000</td>
+                    <td>Y</td>
+                    <td class="btn"><input type="button" value="삭제"></td>
+                    <td class="btn"><input type="button" value="수정" onclick="location.href='prize_revise.html'"></td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>200001</td>
+                    <td>이미지</td>
+                    <td>페인트1</td>
+                    <td>50</td>
+                    <td>10,000</td>
+                    <td>7,000</td>
+                    <td>Y</td>
+                    <td class="btn"><input type="button" value="삭제"></td>
+                    <td class="btn"><input type="button" value="수정" onclick="location.href='prize_revise.html'"></td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>200002</td>
+                    <td>이미지</td>
+                    <td>페인트2</td>
+                    <td>50</td>
+                    <td>10,000</td>
+                    <td>7,000</td>
+                    <td>Y</td>
+                    <td class="btn"><input type="button" value="삭제"></td>
+                    <td class="btn"><input type="button" value="수정" onclick="location.href='prize_revise.html'"></td>
+                </tr>
+            </table>
+            
+        </fieldset>
+    </div>
+    </div>
+</body>
+
+
+
+</html>

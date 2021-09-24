@@ -1,0 +1,136 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+ul,li {list-style: none;}
+
+
+/*header*/
+#header {
+    width: 100%;
+    height: 100px;
+}
+
+div#logo > a {
+    font-size: 30px;
+    width: 15%;
+    height: 100%;
+    line-height: 300%;
+    padding-left: 1%;
+    color: green;
+}
+
+/*side menu*/
+div#menu {
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+div.btn {
+    width: 100%;
+    font-size: 24px;
+}
+
+div.btn > a {
+    color: #333;
+    background: #999;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+div.btn ul.sub li {
+    height: 50px;
+    font-size: 20px;
+    background: #ddd;
+}
+
+div.btn ul.sub li > a {
+    color: #777;
+    display: inline-block;
+    margin-top: 3%;
+    padding: 5%;
+}
+
+/*section1*/
+#main {
+    display: inline-block;
+    width: 70%;
+    padding-left: 5%;
+    vertical-align: top;
+}
+
+div.title {
+    font-size: 30px;
+    margin: 10px;
+}
+
+fieldset {
+    margin-bottom: 5%;
+    border: 0 solid;
+}
+
+legend {
+    border: 0px solid;
+}
+
+legend p {
+    font-size: 24px;
+}
+
+fieldset > ul li {
+    margin: 10px;
+}
+
+fieldset > ul li label > span {
+    color: red;
+}
+
+fieldset ul li > label.title {
+    width: 20%;
+    display: inline-block;
+}
+
+fieldset ul li > input[type="button"]:hover {
+    cursor: pointer;
+}
+
+fieldset ul li label.btn {
+    width: 10%;
+    display: inline-block;
+}
+
+fieldset ul li div.setting_box {
+    width: 70%;
+    height: 300px;
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+/*btn area*/
+#btn_box {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#btn_box input[type="submit"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
+}
+
+#btn_box input[type="button"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
+}
+
+#btn_box input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+#btn_box input[type="button"]:hover {
+    cursor: pointer;
+}
