@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <title>주문상세조회</title>
+    
+    <link rel="stylesheet" href="css/order_inquiry.css">
+</head>
+    
+<body>
+    <div id="main_wrap">
+    <div id="header">
+        <div id="logo"><a href="admin_main.html">logo_area</a></div>
+    </div>
+<!--사이드 메뉴-->
+    <div id="menu" alt="메뉴">
+        <div class="btn" alt="상품관리"><a href="#">상품관리</a>
+            <ul class="sub">
+                <li><a href="prize_reg.html" alt="상품등록">상품등록</a></li>
+                <li><a href="prize_list.html" alt="상품목록">상품목록</a></li>
+                <li><a href="ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="주문관리"><a href="#">주문관리</a>
+            <ul class="sub">
+                <li><a href="order_list.html" alt="주문내역">주문내역</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="고객관리"><a href="#">고객관리</a>
+            <ul class="sub">
+                <li><a href="cus_list.html" alt="고객목록">고객목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="게시판관리"><a href="#">게시판관리</a>
+            <ul class="sub">
+                <li><a href="prize_review.html" alt="상품후기목록">상품후기목록</a></li>
+                <li><a href="prize_inquiry.html" alt="상품문의목록">상품문의목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="매출분석"><a href="#">매출분석</a>
+            <ul class="sub">
+                <li><a href="sales_stat.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
+            </ul>
+        </div>
+    </div>
+        
+    <!--main-->
+    <div id="main">
+        <div class="title" alt="타이틀">주문상세조회</div>
+<!--section1-->
+        <fieldset>
+            <legend>
+            <ul class="info" alt="주문정보">
+                <p>주문정보</p>
+                <li>
+                    <label class="title" alt="주문상태변경">주문상태변경</label>
+                    <label class="select" alt="선택">
+                        <select class="s1">
+                            <option>주문접수</option>
+                            <option>결제완료</option>
+                            <option>주문취소완료</option>
+                        </select>
+                    </label>
+                    
+                    <label class="btn" alt="주문상태변경">
+                        <input type="submit" alt="주문상태변경" value="주문상태&nbsp;변경">
+                    </label>
+                    <label class="btn" alt="주문상태로그보기">
+                        <input type="button" value="주문상태&nbsp;로그보기">
+                    </label>
+                </li>
+                <li>
+                    <label class="title" alt="주문번호">주문번호</label>
+                    <label class="content" alt="주문번호내용">2109210001&#40;추후스크립트로변경&#41;</label>
+                </li>
+                
+                <li>
+                    <label class="title" alt="주문자명">주문자명</label>
+                    <label class="content" alt="주문자명내용">홍길동&#40;id&#41;</label>
+                </li>
+                
+                <li>
+                    <label class="title" alt="주문일시">주문일시</label>
+                    <label class="content" alt="주문일시내용">날짜&#40;스크립트로수정&#41;</label>
+                </li>
+            </ul>
+            </legend>
+            
+            <legend>
+                <label>
+                    <ul class="info" alt="결제정보">
+                        <p>결제정보</p>
+                        <li>
+                            <label class="title" alt="총결제금액">총결제&nbsp;금액</label>
+                            <label class="content" alt="총결제금액내용">가격&#40;스크립트로수정&#41;</label>
+                        </li>
+                        
+                        <li>
+                            <label class="title" alt="주문금액">주문&nbsp;금액</label>
+                            <label class="content" alt="주문금액내용">가격&#40;스크립트로수정&#41;</label>
+                        </li>
+                        
+                        <li>
+                            <label class="title" alt="배송비">배송비</label>
+                            <label class="content" alt="배송비내용">가격&#40;스크립트로수정&#41;</label>
+                        </li>
+                        
+                        <li>
+                            <label class="title" alt="결제수단">결제수단</label>
+                            <label class="content" alt="결제수단내용">무통장입금</label>
+                        </li>
+                        
+                        <li>
+                            <label class="title" alt="무통장입금정보">무통장&nbsp;입금정보</label>
+                            <label class="content" alt="총결제금액내용">&#40;스크립트로수정&#41;</label>
+                        </li>
+                        
+                        <li>
+                            <label class="title" alt="환불계좌정보">환불계좌정보</label>
+                            <label class="content" alt="총결제금액내용">&#40;스크립트로수정&#41;</label>
+                        </li>
+                    </ul>
+                </label>
+            </legend>
+            
+            <legend>
+                <ul class="info" alt="주문상품정보">
+                    <p>주문상품정보</p>
+                    <il>
+                        <table>
+                            <tr>
+                                <th>번호</th>
+                                <th>이미지</th>
+                                <th>상품정보</th>
+                                <th>수량</th>
+                                <th>결제금액</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>1</td>
+                                <td>이미지</td>
+                                <td>&#91;제일벽지&#93;&#40;베이직플러스&#41;</td>
+                                <td>1</td>
+                                <td>36&#44;000</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>2</td>
+                                <td>이미지</td>
+                                <td>&#91;제일벽지&#93;&#40;베이직플러스&#41;</td>
+                                <td>1</td>
+                                <td>36&#44;000</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>3</td>
+                                <td>이미지</td>
+                                <td>&#91;제일벽지&#93;&#40;베이직플러스&#41;</td>
+                                <td>1</td>
+                                <td>36&#44;000</td>
+                            </tr>
+                        </table>
+                    </il>
+                    
+                    <li class="price_box">
+                        <label class="price" alt="결제금액">결제금액</label>
+                        <label class="price_num" alt="결제금액내용">
+                            <input tpye="text" alt="결제금액내용">
+                        </label>
+                    </li>
+                </ul>
+            </legend>
+            
+            <legend>
+                <ul class="info" alt="배송지정보">
+                    <p>배송지&nbsp;정보</p>
+                    <li>
+                        <label class="title" alt="받으시는분">받으시는&nbsp;분</label>
+                        <label class="content" alt="받으시는분내용">
+                            <input type="text" alt="받으시는분">
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="title" alt="연락처">연락처</label>
+                        <label class="content" alt="연락처내용">
+                            <input type="text" alt="연락처">
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="title" alt="주소">주소</label>
+                        <label class="content" alt="주소내용">
+                            <input type="text" alt="주소">
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="title" alt="배송시요구사항">배송시&nbsp;요구사항</label>
+                        <label class="content" alt="요구사항내용">
+                            <input type="text" alt="배송시요구사항">
+                        </label>
+                    </li>
+                </ul>
+            </legend>
+            
+            <legend>
+                <ul class="info" alt="관리자메모">
+                    <p>관리자&nbsp;메모</p>
+                    <li>
+                        <label class="contetn" alt="메모">
+                            <input type="text" alt="메모내용" class="memo">
+                        </label>
+                    </li>
+                </ul>
+            </legend>
+            
+            <ul class="btn_box">
+                <input type="submit" alt="수정" onclick="location.href='order_list.html'" value="수정">
+                <input type="reset" alt="삭제" onclick="location.href='order_list.html'" value="삭제">
+                <input type="button" alt="목록" onclick="location.href='order_list.html'" value="목록">
+            </ul>
+        </fieldset>
+        
+        
+    </div>
+    </div>
+</body>
+
+
+
+</html>

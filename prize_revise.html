@@ -14,7 +14,7 @@
     <div id="main_wrap">
 <!--header-->
     <div id="header">
-        <div id="logo"><a href="../admin_main.html">logo_area</a></div>
+        <div id="logo"><a href="admin_main.html">logo_area</a></div>
     </div>
 
 <!--사이드 메뉴-->
@@ -57,85 +57,83 @@
     <div id="main">
         <div class="title" alt="타이틀">상품수정</div>
 <!--section1-->
+        <form method="post">
         <fieldset>
         <legend>
             <p>기존정보</p>
-        </legend>
-        
             <ul class="info" alt="기존정보">
                 <li>
-                    <label class="title" alt="상품코드">상품코드</label>
-                    <label class="code_num" alt="코드번호">100001</label>
+                    <label class="title" alt="상품코드" for="code">상품코드</label>
+                    <p id="code" alt="코드번호">100001</p>
                 </li>
                 <li>
-                    <label class="title" alt="상품명">상품명&nbsp;&#40;<span>필수</span>&#41;</label>
-                    <input type="text" id="name" value="벽지1" minlength="0" maxlength="250">&nbsp;&#91;0&#47;250&#93;
+                    <label class="title" alt="상품명" for="name">상품명&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" id="name" value="name" placeholder="벽지1" minlength="0" maxlength="250">&nbsp;&#91;0&#47;250&#93;
                 </li>
                 <li>
-                    <label class="title" alt="판매가">판매가&nbsp;&#40;<span>필수</span>&#41;</label>
-                    <input type="text" value="30,000" id="num">&nbsp;원
+                    <label class="title" alt="판매가" for="slae_price">판매가&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="pirce" id="slae_price">&nbsp;원
                 </li>
                 <li>
-                    <label class="title" alt="공급가">공급가&nbsp;&#40;<span>필수</span>&#41;</label>
-                    <input type="text" value="25,000" id="num">&nbsp;원
+                    <label class="title" alt="공급가" for="supply_price">공급가&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="25,000" id="supply_price">&nbsp;원
                 </li>
                 <li>
-                    <label class="title" alt="배송료">배송료&nbsp;&#40;<span>필수</span>&#41;</label>
-                    <input type="text" value="2,000" id="num">&nbsp;원
+                    <label class="title" alt="배송료" for="shipping_fee">배송료&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="2,000" id="shipping_fee">&nbsp;원
                 </li>
                 <li>
-                    <label class="title" alt="수량">수량&nbsp;&#40;<span>필수</span>&#41;</label>
-                    <input type="text" value="200" id="num">&nbsp;개
+                    <label class="title" alt="수량" for="quantity">수량&nbsp;&#40;<span>필수</span>&#41;</label>
+                    <input type="text" value="200" id="quantity">&nbsp;개
                 </li>
                 <li>
-                    <label class="title" alt="상품요약설명">상품&nbsp;요약설명</label>
-                    <input type="text" value="상품요약" id="info" minlength="0" maxlength="250">&nbsp;&#91;0&#47;250&#93;
+                    <label class="title" alt="상품요약설명" for="prize_info">상품&nbsp;요약설명</label>
+                    <input type="text" value="상품요약" id="prize_info" minlength="0" maxlength="250">&nbsp;&#91;0&#47;250&#93;
                 </li>
                 <li>
-                    <label class="title" alt="대표이미지">대표이미지</label>
-                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                    <label class="title" alt="대표이미지" for="img">대표이미지</label>
+                    <input type="text" id="img">&nbsp;<input type="button" value="이미지찾기" >
                 </li>
                 <li>
-                    <label class="title" alt="추가이미지1">추가이미지&nbsp;1</label>
-                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                    <label class="title" alt="추가이미지1" for="img1">추가이미지&nbsp;1</label>
+                    <input type="text" id="img2">&nbsp;<input type="button" value="이미지찾기">
                 </li>
                 <li>
-                    <label class="title" alt="추가이미지2">추가이미지&nbsp;2</label>
-                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                    <label class="title" alt="추가이미지2" for="img2">추가이미지&nbsp;2</label>
+                    <input type="text" id="img2">&nbsp;<input type="button" value="이미지찾기">
                 </li>
                 <li>
-                    <label class="title" alt="추가이미지3">추가이미지&nbsp;3</label>
-                    <input type="text">&nbsp;<input type="button" value="이미지찾기">
+                    <label class="title" alt="추가이미지3" for="img3">추가이미지&nbsp;3</label>
+                    <input type="text" id="img3">&nbsp;<input type="button" value="이미지찾기">
                 </li>
             </ul>
-        </fieldset>
+            </legend>
 <!--section2-->
-        <fieldset>
         <legend>
             <p>진열설정</p>
-        </legend>
         
             <ul class="info" alt="진열설정">
                 <li>
-                    <label class="title" alt="진열상태">진열상태</label>
-                    <label class="btn"><input type="radio" name="display" value="on" checked>&nbsp;진열함</label>
-                    <label class="btn"><input type="radio" name="display" value="off">&nbsp;진열안함</label>
+                    <label class="title" alt="진열상태" for="display_status">진열상태</label>
+                    <input type="radio" name="display" value="on" checked id="display_status">&nbsp;진열함
+                    <input type="radio" name="display" value="off" id="display_status">&nbsp;진열안함
                 </li>
                 <li>
-                    <label class="title" alt="판매상태">판매상태</label>
-                    <label class="btn"><input type="radio" name="sale" value="on" checked>&nbsp;판매함</label>
-                    <label class="btn"><input type="radio" name="sale" value="off">&nbsp;판매안함</label>
+                    <label class="title" alt="판매상태" for="slaes_status">판매상태</label>
+                    <input type="radio" name="sale" value="on" checked id="slaes_status">&nbsp;판매함
+                    <input type="radio" name="sale" value="off" id="slaes_status">&nbsp;판매안함
                 </li>
                 <li>
-                    <label class="title" alt="상품분류">상품분류</label>
-                    <label class="btn"><input type="radio" name="kind" value="on" checked>&nbsp;벽지</label>
-                    <label class="btn"><input type="radio" name="kind" value="off">&nbsp;페인트</label>
+                    <label class="title" alt="상품분류" for="product_class">상품분류</label>
+                    <input type="radio" name="kind" value="wallpaper" checked id="product_class">&nbsp;벽지
+                    <input type="radio" name="kind" value="paint" id="product_class">&nbsp;페인트
                 </li>
                 <li>
                     <label class="title" alt="상품상세설명">상품&nbsp;상세설명</label>
                     <div class="setting_box" style="overflow: scroll"></div>
                 </li>
             </ul>
+            </legend>
         </fieldset>
         
         <div id="btn_box">

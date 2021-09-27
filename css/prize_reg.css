@@ -72,35 +72,50 @@ fieldset {
 
 legend {
     border: 0px solid;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 legend p {
     font-size: 24px;
 }
 
-fieldset > ul li {
+fieldset legend {
+    font-size: 16px;
+}
+
+fieldset legend ul p {
+    font-size: 16px;
+}
+
+fieldset legend ul li {
     margin: 10px;
 }
 
-fieldset > ul li label > span {
+fieldset legend ul li label > span {
     color: red;
 }
 
-fieldset ul li > label.title {
+fieldset legend ul li > label.title {
     width: 20%;
     display: inline-block;
 }
 
-fieldset ul li > input[type="button"]:hover {
+fieldset legend ul li p {
+    display: inline-block;
+}
+
+fieldset legend ul li > input[type="button"]:hover {
     cursor: pointer;
 }
 
-fieldset ul li label.btn {
+fieldset legend ul li label.btn {
     width: 10%;
     display: inline-block;
 }
 
-fieldset ul li div.setting_box {
+fieldset legend ul li div.setting_box {
     width: 70%;
     height: 300px;
     border: 1px solid red;

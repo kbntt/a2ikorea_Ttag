@@ -68,7 +68,6 @@ div.title {
 fieldset {
     margin-bottom: 5%;
     border: 0 solid;
-    width: 100%;
 }
 
 legend {
@@ -83,55 +82,53 @@ fieldset > ul li {
     margin: 10px;
 }
 
-fieldset ul li label {
-    margin: 5px;
-}
-
 fieldset ul li > label.title {
+    width: 20%;
     display: inline-block;
 }
 
-fieldset ul li input[type="button"]:hover {
+fieldset > ul li label.add_box {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+fieldset > ul li label.add_box input.add[type="text"] {
+    margin-top: 5px;
+    height: 50px;
+}
+
+fieldset ul li > input[type="button"]:hover {
     cursor: pointer;
 }
 
-/*table area*/
-table {
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    border-collapse: collapse;
+fieldset ul li label.btn {
+    width: 10%;
+    display: inline-block;
+}
+
+/*btn area*/
+#btn_box {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-tr,th,td {
-}
-
-table tr {
-    border-bottom: 1px solid #999;
-}
-
-table tr th {
-    height: 50px;
-    width: 10%;
-}
-
-table tr td {
-    width: 10%;
-    height: 50px;
-    text-align: center;
-    font-size: 12px;
-}
-
-table tr td.btn {
+    height: 100px;
     text-align: center;
 }
 
-table tr td.btn input[type="button"] {
-    width: 80%;
+#btn_box input[type="submit"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
 }
 
-table tr td.btn input[type="button"]:hover {
+#btn_box input[type="button"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
+}
+
+#btn_box input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+#btn_box input[type="button"]:hover {
     cursor: pointer;
 }

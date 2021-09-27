@@ -126,7 +126,7 @@ table tr td.btn {
 }
 
 table tr td.btn input[type="button"] {
-    width: 50px;
+    width: 80%;
 }
 
 table tr td.btn input[type="button"]:hover {

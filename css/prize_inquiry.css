@@ -124,8 +124,16 @@ table tr td {
     font-size: 12px;
 }
 
+table tr td:nth-child(5) {
+    width: 30%;
+}
+
 table tr td.btn {
     text-align: center;
+}
+
+table tr td.btn input[type="reset"] {
+    width: 80%;
 }
 
 table tr td.btn input[type="button"] {

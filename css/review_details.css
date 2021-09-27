@@ -66,99 +66,91 @@ div.title {
 }
 
 fieldset {
+    width: 100%;
     margin-bottom: 5%;
     border: 0 solid;
-}
-
-legend {
-    border: 0px solid;
-}
-
-legend p {
-    font-size: 24px;
-}
-
-fieldset > ul {
-    width: 100%;
-}
-
-fieldset > ul li:first-child {
-    width: 20%;
     display: inline-block;
-    margin: 0 auto;
 }
 
-fieldset > ul li:nth-child(2) {
-    width: 20%;
-    display: inline-block;
-    margin: 0 auto;
+fieldset ul.info {
+border-bottom: 1px solid #999;
 }
 
-fieldset > ul li:nth-child(3) {
-    width: 40;
+fieldset ul.box {
     display: inline-block;
-    margin: 0 auto;
+    vertical-align: middle;
 }
 
-fieldset > ul li:last-child {
-    width: 5%;
-    display: inline-block;
-    margin-right: 0 auto;
+fieldset ul.box:last-child {
+    width: 200px;
+    height: 100px;
+    vertical-align :middle
+}
+
+fieldset > ul li {
+    margin: 10px;
 }
 
 fieldset ul li > label.title {
+    width: 20%;
     display: inline-block;
 }
 
-fieldset ul li input[type="button"]:hover {
-    cursor: pointer;
+fieldset > ul li label.add_box {
+    display: inline-block;
+    vertical-align: text-top;
 }
 
-/*table area*/
-table {
-    border-top: 1px solid #333;
-     border-bottom: 1px solid #333;
-    border-collapse: collapse;
-    width: 100%;
-    height: 400px;
-}
-
-tr,th,td {
-}
-
-table tr {
-    border-bottom: 1px solid #999;
-}
-
-table tr:last-child {
-    border-bottom: 0;
-}
-
-table tr th {
+fieldset > ul li label.add_box input.add[type="text"] {
+    margin-top: 5px;
     height: 50px;
 }
 
-table tr td {
+fieldset ul li > input[type="button"]:hover {
+    cursor: pointer;
+}
+
+fieldset ul li label.btn {
+    width: 10%;
+    display: inline-block;
+}
+
+fieldset ul li.img_box {
     width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #999;
 }
 
-table tr td:nth-child(8) {
+fieldset ul li.big_img_box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #999;
+}
+
+/*btn area*/
+#btn_box {
+    width: 100%;
+    height: 100px;
     text-align: center;
 }
 
-table tr td.btn {
-    text-align: center;
+#btn_box input[type="reset"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
 }
 
-table tr td.btn input[type="button"] {
-    width: 50px;
-    height: 
+#btn_box input[type="button"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
 }
 
-table tr td.btn input[type="number"] {
-    width: 50px;
+#btn_box input[type="reset"]:hover {
+    cursor: pointer;
 }
 
-table tr td.btn input[type="button"]:hover {
+#btn_box input[type="button"]:hover {
     cursor: pointer;
 }

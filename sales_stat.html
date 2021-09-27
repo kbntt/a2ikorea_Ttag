@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <title>기간별매출통계</title>
+    
+    <link rel="stylesheet" href="css/sales_stat.css">
+</head>
+    
+<body>
+    <div id="main_wrap">
+    <div id="header">
+        <div id="logo"><a href="admin_main.html">logo_area</a></div>
+    </div>
+<!--사이드 메뉴-->
+    <div id="menu" alt="메뉴">
+        <div class="btn" alt="상품관리"><a href="#">상품관리</a>
+            <ul class="sub">
+                <li><a href="prize_reg.html" alt="상품등록">상품등록</a></li>
+                <li><a href="prize_list.html" alt="상품목록">상품목록</a></li>
+                <li><a href="ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="주문관리"><a href="#">주문관리</a>
+            <ul class="sub">
+                <li><a href="order_list.html" alt="주문내역">주문내역</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="고객관리"><a href="#">고객관리</a>
+            <ul class="sub">
+                <li><a href="cus_list.html" alt="고객목록">고객목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="게시판관리"><a href="#">게시판관리</a>
+            <ul class="sub">
+                <li><a href="prize_review.html" alt="상품후기목록">상품후기목록</a></li>
+                <li><a href="prize_inquiry.html" alt="상품문의목록">상품문의목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="매출분석"><a href="#">매출분석</a>
+            <ul class="sub">
+                <li><a href="sales_stat.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
+            </ul>
+        </div>
+    </div>
+        
+    <!--main-->
+    <div id="main">
+        <div class="title" alt="타이틀">기간별매출통계</div>
+<!--section1-->
+        <fieldset>
+        
+            <ul class="info" alt="기존정보">
+                <li>
+                    <label class="title" alt="상품분류별"><input type="date"></label>
+                    <label class="select" alt="선택">
+                        <input type="button" alt="조회" value="조회">
+                    </label>
+                    
+                    <label class="title" alt="년"><input type="checkbox">&nbsp;년</label>
+                    <label class="title" alt="월"><input type="checkbox">&nbsp;월</label>
+                    <label class="title" alt="일"><input type="checkbox">&nbsp;일</label>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <fieldset>
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <th>년월일</th>
+                    <th>구매금액</th>
+                    <th>배송비</th>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td>이름</td>
+                    <td>100001</td>
+                    <td>벽지1</td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>이름</td>
+                    <td>100001</td>
+                    <td>벽지1</td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>이름</td>
+                    <td>100001</td>
+                    <td>벽지1</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>이름</td>
+                    <td>100001</td>
+                    <td>벽지1</td>
+                </tr>
+            </table>
+            
+        </fieldset>
+    </div>
+    </div>
+</body>
+
+
+
+</html>

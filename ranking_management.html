@@ -11,7 +11,7 @@
 <body>
     <div id="main_wrap">
     <div id="header">
-        <div id="logo"><a href="../admin_main.html">logo_area</a></div>
+        <div id="logo"><a href="admin_main.html">logo_area</a></div>
     </div>
 <!--사이드 메뉴-->
     <div id="menu" alt="메뉴">
@@ -54,7 +54,6 @@
         <div class="title" alt="타이틀">진열순위관리</div>
 <!--section1-->
         <fieldset>
-        
             <ul class="info" alt="기존정보">
                 <li>
                     <label class="title" alt="상품분류별">상품분류별</label>
@@ -65,18 +64,24 @@
                             <option>페인트</option>
                         </select>
                     </label>
+                </li>
+                <li>
                     <label class="check" alt="체크">
                         <input type="radio">&nbsp;진열함
                     </label>
                     <label class="check" alt="체크">
                         <input type="radio">&nbsp;진열안함
                     </label>
+                </li>
+                <li>
                     <label class="title" alt="등록일">등록일</label>
                     <label class="date" alt="날짜">
-                        <input type="date">&nbsp;&#126;&nbsp;<input type="date">
+                        <input type="date" id="start">&nbsp;&#126;&nbsp;<input type="date" id="end">
                     </label>
+                </li>
+                <li>
                     <label class="btn" alt="조회">
-                        <input type="button" value="조회">
+                        <input type="submit" value="조회" alt="조회">
                     </label>
                 </li>
             </ul>

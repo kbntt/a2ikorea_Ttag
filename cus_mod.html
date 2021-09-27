@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <title>회원정보수정</title>
+    
+    <link rel="stylesheet" href="./css/cus_mod.css">
+</head>
+
+    
+    
+<body>
+    <div id="main_wrap">
+<!--header-->
+    <div id="header">
+        <div id="logo"><a href="admin_main.html">logo_area</a></div>
+    </div>
+
+<!--사이드 메뉴-->
+    <div id="menu" alt="메뉴">
+        <div class="btn" alt="상품관리"><a href="#">상품관리</a>
+            <ul class="sub">
+                <li><a href="prize_reg.html" alt="상품등록">상품등록</a></li>
+                <li><a href="prize_list.html" alt="상품목록">상품목록</a></li>
+                <li><a href="ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="주문관리"><a href="#">주문관리</a>
+            <ul class="sub">
+                <li><a href="order_list.html" alt="주문내역">주문내역</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="고객관리"><a href="#">고객관리</a>
+            <ul class="sub">
+                <li><a href="cus_list.html" alt="고객목록">고객목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="게시판관리"><a href="#">게시판관리</a>
+            <ul class="sub">
+                <li><a href="prize_review.html" alt="상품후기목록">상품후기목록</a></li>
+                <li><a href="prize_inquiry.html" alt="상품문의목록">상품문의목록</a></li>
+            </ul>
+        </div>
+        
+        <div class="btn" alt="매출분석"><a href="#">매출분석</a>
+            <ul class="sub">
+                <li><a href="sales_stat.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!--main-->
+    <div id="main">
+        <div class="title" alt="타이틀">회원정보수정</div>
+<!--section1-->
+        <fieldset>
+        <legend>
+            <p>회원기존정보</p>
+        </legend>
+        
+            <ul class="info" alt="기존정보">
+                <li>
+                    <label class="title" alt="아이디">아이디</label>
+                    <label class="text" alt="아이디"></label>
+                </li>
+                <li>
+                    <label class="title" alt="성명">성명</label>
+                    <input type="text" alt="성명">
+                </li>
+                <li>
+                    <label class="title" alt="생년월일">생년월일</label>
+                    <input type="date" alt="생년월일">
+                </li>
+                 <li>
+                    <label class="title" alt="성별">성별</label>
+                    <label class="btn"><input type="radio" name="display" value="man" checked>&nbsp;남</label>
+                    <label class="btn"><input type="radio" name="display" value="woman">&nbsp;여</label>
+                </li>
+                <li>
+                    <label class="title" alt="주소">주소</label>
+                    <label class="add_box"><input type="text" alt="우편번호">&nbsp;<input type="button" value="우편번호" alt="우편번호"><br>
+                    <input type="text" alt="상세주소" class="add" size="52px"></label>
+                <li>
+                    <label class="title" alt="휴대폰번호">휴대폰번호</label>
+                    <select>
+                        <option>010</option>
+                        <option>011</option>
+                        <option>016</option>
+                        <option>017</option>
+                        <option>018</option>
+                        <option>019</option>
+                    </select>&nbsp;&#45;&nbsp;<input type="text" alt="중간번호" class="num">&nbsp;&#45;&nbsp;<input type="text" alt="뒷번호" class="num">
+                </li>
+                <li>
+                    <label class="title" alt="연락처">연락처</label>
+                    <select>
+                        <option>02</option>
+                        <option>031</option>
+                        <option>033</option>
+                        <option>043</option>
+                        <option>041</option>
+                        <option>054</option>
+                        <option>055</option>
+                        <option>063</option>
+                        <option>061</option>
+                        <option>064</option>
+                        <option>010</option>
+                    </select>&nbsp;&#45;&nbsp;<input type="text" alt="연락처중간번호" class="num">&nbsp;&#45;&nbsp;<input type="text" alt="연락처뒷번호" class="num">
+                </li>
+                <li>
+                    <label class="title" alt="email">E&#45;mail&nbsp;주소</label>
+                    <input type="text" alt="email" size="52px">
+                </li>
+            </ul>
+        </fieldset>
+        
+        <div id="btn_box">
+            <input type="submit" value="수정" alt="수정" onclick="location.href='cus_list.html'">&nbsp;&nbsp;<input type="button" value="목록" alt="목록" onclick="location.href='cus_list.html'">
+        </div>
+    </div>
+    </div>
+</body>
+    
+
+</html>

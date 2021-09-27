@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=divice-width, initial-scale=1">
-    <title>관리자페이지</title>
+    <title>로그인</title>
     
-    <link rel="stylesheet" href="css/admin_main.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
     
 <body>
     <div id="main_wrap">
     <div id="header">
-        <div id="logo"><a href="admin_main.html">logo_area</a><a href="login.html">login</a></div>
+        <div id="logo"><a href="admin_main.html">logo_area</a></div>
     </div>
 <!--사이드 메뉴-->
-    <div id="menu" alt="메뉴">
+   <div id="menu" alt="메뉴">
         <div class="btn" alt="상품관리"><a href="#">상품관리</a>
             <ul class="sub">
                 <li><a href="./login.html" alt="상품등록">상품등록</a></li>
@@ -47,6 +47,32 @@
                 <li><a href="login.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
             </ul>
         </div>
+    </div>
+        
+    <!--main-->
+    <div id="main">
+        <div class="title" alt="타이틀">로그인</div>
+<!--section1-->
+        <fieldset>
+        
+            <ul class="info" alt="로그인">
+                <li>
+                    <label class="title" alt="타이틀">회원로그인</label>
+                </li>
+                <li>
+                    <label class="text_box" alt="id"><input type="text" alt="id" placeholder="아이디"></label>
+                </li>
+                <li>
+                    <label class="text_box" alt="pass"><input type="password" alt="id" placeholder="비밀번호"></label>
+                </li>
+                <li>
+                    <label class="check_box" alt="save"><input type="checkbox" alt="save">&nbsp;아이디&nbsp;저장</label>
+                </li>
+                <li>
+                    <label class="btn" alt="login"><input type="submit" value="로그인" onclick="location.href='admin_after.html'"></label>
+                </li>
+            </ul>
+        </fieldset>
     </div>
     </div>
 </body>
