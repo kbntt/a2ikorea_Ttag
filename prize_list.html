@@ -5,49 +5,47 @@
     <meta name="viewport" content="width=divice-width, initial-scale=1">
     <title>상품목록</title>
     
+    <script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
     <link rel="stylesheet" href="css/prize_list.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
     
 <body>
     <div id="main_wrap">
     <div id="header">
-        <div id="logo"><a href="admin_main.html">logo_area</a></div>
+        <div id="logo"><a href="admin_after.html">Ttag</a><a href="admin_main.html">logout</a></div>
     </div>
 <!--사이드 메뉴-->
     <div id="menu" alt="메뉴">
-        <div class="btn" alt="상품관리"><a href="#">상품관리</a>
+        <div class="btn" alt="상품관리"><a href="#"><i class="fas fa-barcode"></i>&nbsp;상품관리</a></div>
             <ul class="sub">
-                <li><a href="prize_reg.html" alt="상품등록">상품등록</a></li>
-                <li><a href="prize_list.html" alt="상품목록">상품목록</a></li>
-                <li><a href="ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
+                <li><a href="./prize_reg.html" alt="상품등록">상품등록</a></li>
+                <li><a href="./prize_list.html" alt="상품목록">상품목록</a></li>
+                <li><a href="./ranking_management.html" alt="진열순위관리">진열순위&nbsp;관리</a></li>
             </ul>
-        </div>
         
-        <div class="btn" alt="주문관리"><a href="#">주문관리</a>
+        <div class="btn" alt="주문관리"><a href="#"><i class="fas fa-list-alt"></i>&nbsp;주문관리</a></div>
             <ul class="sub">
                 <li><a href="order_list.html" alt="주문내역">주문내역</a></li>
             </ul>
-        </div>
         
-        <div class="btn" alt="고객관리"><a href="#">고객관리</a>
+        <div class="btn" alt="고객관리"><a href="#"><i class="fas fa-user"></i>&nbsp;고객관리</a></div>
             <ul class="sub">
                 <li><a href="cus_list.html" alt="고객목록">고객목록</a></li>
             </ul>
-        </div>
         
-        <div class="btn" alt="게시판관리"><a href="#">게시판관리</a>
+        <div class="btn" alt="게시판관리"><a href="#"><i class="far fa-window-restore"></i>&nbsp;게시판관리</a></div>
             <ul class="sub">
                 <li><a href="prize_review.html" alt="상품후기목록">상품후기목록</a></li>
                 <li><a href="prize_inquiry.html" alt="상품문의목록">상품문의목록</a></li>
             </ul>
-        </div>
         
-        <div class="btn" alt="매출분석"><a href="#">매출분석</a>
+        <div class="btn" alt="매출분석"><a href="#"><i class="fas fa-chart-line"></i>&nbsp;매출분석</a></div>
             <ul class="sub">
                 <li><a href="sales_stat.html" alt="기간별 매출통계">기간별&nbsp;매출통계</a></li>
             </ul>
         </div>
-    </div>
         
     <!--main-->
     <div id="main">
@@ -148,9 +146,21 @@
                 </tr>
             </table>
             
+            <div id="list">
+                <li>
+                    <a href="#" name="before_2"><i class="fas fa-angle-double-left"></i></a>&nbsp;
+                    <a href="#" name="before"><i class="fas fa-angle-left"></i></a>&nbsp;
+                    <a href="#" name="now_page">1</a>&nbsp;
+                    <a href="#" name="next"><i class="fas fa-angle-right"></i></a>&nbsp;
+                    <a href="#" name_next_2><i class="fas fa-angle-double-right"></i></a>
+                </li>
+            </div>
         </fieldset>
     </div>
     </div>
+    
+    
+    <script type="text/javascript" src="js/admin.js"></script>
 </body>
 
 
