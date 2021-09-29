@@ -14,6 +14,9 @@ ul,li {list-style: none;}
     background: #03658C;
 }
 
+div#logo, div#login {
+}
+
 div#logo > a {
     font-size: 30px;
     width: 15%;
@@ -42,7 +45,7 @@ div#logo > a:last-child:hover {
 
 /*side menu*/
 div#menu {
-    width: 10%;
+    width: 250px;
     height: 100%;
     display: inline-block;
     box-sizing: border-box;
@@ -80,7 +83,9 @@ div.btn > a {
     color: #333;
     display: inline-block;
     padding: 5%;
+    padding-left: 15%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #menu ul.sub li > a:hover {
@@ -118,20 +123,24 @@ fieldset {
     border: 0 solid;
 }
 
+input {
+    font-size: 18px;
+}
+
+select {
+    font-size: 18px;
+}
+
 legend {
     border: 0px solid;
     width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ddd;
 }
 
 legend p {
     font-size: 30px;
-}
-
-input {
-    font-size: 20px;
 }
 
 fieldset legend {
@@ -140,7 +149,7 @@ fieldset legend {
 
 fieldset > ul li {
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -149,27 +158,15 @@ fieldset ul li > label.title {
     display: inline-block;
 }
 
-fieldset ul li > label.content {
+fieldset > ul li label.add_box {
     display: inline-block;
-    vertical-align: text-top
+    vertical-align: text-top;
 }
 
-fieldset ul li > label.content p {
-    display: inline-block;
-    width: 565px;
-    height: 150px;
-    border: 1px solid #999;
-    padding: 5px;
-    box-sizing: border-box;
+fieldset > ul li label.add_box input.add[type="text"] {
+    margin-top: 5px;
+    height: 50px;
 }
-
-fieldset ul li label.content textarea {
-    width: 565px;
-    height: 150px;
-    line-height: 150;
-    
-}
-
 
 fieldset ul li > input[type="button"]:hover {
     cursor: pointer;
@@ -180,7 +177,6 @@ fieldset ul li label.btn {
     display: inline-block;
 }
 
-
 /*btn area*/
 #btn_box {
     width: 100%;
@@ -188,7 +184,7 @@ fieldset ul li label.btn {
     text-align: center;
 }
 
-#btn_box input[type="reset"] {
+#btn_box input[type="submit"] {
     width: 75px;
     height: 25px;
     vertical-align: center;
@@ -200,7 +196,7 @@ fieldset ul li label.btn {
     vertical-align: center;
 }
 
-#btn_box input[type="reset"]:hover {
+#btn_box input[type="submit"]:hover {
     cursor: pointer;
 }
 

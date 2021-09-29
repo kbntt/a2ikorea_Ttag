@@ -42,7 +42,7 @@ div#logo > a:last-child:hover {
 
 /*side menu*/
 div#menu {
-    width: 10%;
+    width: 250px;
     height: 100%;
     display: inline-block;
     box-sizing: border-box;
@@ -80,7 +80,9 @@ div.btn > a {
     color: #333;
     display: inline-block;
     padding: 5%;
+    padding-left: 15%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #menu ul.sub li > a:hover {
@@ -134,83 +136,76 @@ input {
     font-size: 20px;
 }
 
-select {
-    font-size: 20px;
-}
-
 fieldset legend {
     font-size: 24px;
 }
 
 fieldset > ul li {
-    margin: 10px;
+    padding: 10px;
     font-size: 20px;
-}
-
-fieldset ul li label {
-    margin: 5px;
+    border-bottom: 1px solid #ddd;
 }
 
 fieldset ul li > label.title {
+    width: 20%;
     display: inline-block;
 }
 
-fieldset ul li input[type="button"]:hover {
+fieldset ul li > label.content {
+    display: inline-block;
+    vertical-align: text-top
+}
+
+fieldset ul li > label.content p {
+    display: inline-block;
+    width: 565px;
+    height: 150px;
+    border: 1px solid #999;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+fieldset ul li label.content textarea {
+    width: 565px;
+    height: 150px;
+    line-height: 150;
+    
+}
+
+
+fieldset ul li > input[type="button"]:hover {
     cursor: pointer;
 }
 
-#list {
+fieldset ul li label.btn {
+    width: 10%;
+    display: inline-block;
+}
+
+
+/*btn area*/
+#btn_box {
     width: 100%;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-}
-
-#list li a {
-    color: #000;
-}
-
-/*table area*/
-table {
-    border-top: 1px solid #333;
-     border-bottom: 1px solid #333;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-tr,th,td {
-    font-size: 20px;
-}
-
-table tr {
-    border-bottom: 1px solid #999;
-}
-
-table tr th {
-    height: 50px;
-    width: 100px;
-}
-
-table tr td {
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    font-size: 18px;
-}
-
-table tr td a {
-    color: #03658C;
-}
-
-table tr td.btn {
+    height: 100px;
     text-align: center;
 }
 
-table tr td.btn input[type="button"] {
-    width: 80%;
+#btn_box input[type="reset"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
 }
 
-table tr td.btn input[type="button"]:hover {
+#btn_box input[type="button"] {
+    width: 75px;
+    height: 25px;
+    vertical-align: center;
+}
+
+#btn_box input[type="reset"]:hover {
+    cursor: pointer;
+}
+
+#btn_box input[type="button"]:hover {
     cursor: pointer;
 }

@@ -14,6 +14,9 @@ ul,li {list-style: none;}
     background: #03658C;
 }
 
+div#logo, div#login {
+}
+
 div#logo > a {
     font-size: 30px;
     width: 15%;
@@ -42,7 +45,7 @@ div#logo > a:last-child:hover {
 
 /*side menu*/
 div#menu {
-    width: 10%;
+    width: 250px;
     height: 100%;
     display: inline-block;
     box-sizing: border-box;
@@ -80,7 +83,9 @@ div.btn > a {
     color: #333;
     display: inline-block;
     padding: 5%;
+    padding-left: 15%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #menu ul.sub li > a:hover {
