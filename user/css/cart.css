@@ -139,6 +139,7 @@ a {text-decoration: none;}
     }
     
     #section .cart .btnBox {
+        width: 100%;
         height: 40px;
         margin: 20px 0;
         text-align: center;
@@ -147,10 +148,17 @@ a {text-decoration: none;}
 
     #btnLeft {
         float: left;
+        vertical-align: middle;
     }
 
     #btnRight {
         float: right;
+        vertical-align: middle;
+    }
+
+    .cart .btnBox label {
+        height: 40px;
+        vertical-align: middle;
     }
 
     #section .cart .btnBox li {
@@ -161,7 +169,7 @@ a {text-decoration: none;}
     button {
         width: 100px;
         height: 40px;
-        font-size: 1rem;
+        font-size: .8rem;
         box-sizing: border-box;
         margin: 0 20px;
     }
