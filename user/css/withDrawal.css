@@ -1,0 +1,277 @@
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*  웹 뷰 */
+
+@media all and (min-width: 1320px) {
+
+    html {font-size: 16px;}
+
+    /* section */
+
+    #section {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section .withDrawal {
+        width: 1320px;
+        min-height: 80vh;
+        padding: 200px 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+
+    #section .withDrawal fieldset {
+        width: 1320px;
+        margin: 0 auto;
+        border-style: none;
+        text-align: center;
+    }
+
+    #section .withDrawal fieldset legend {
+        font-size: 3rem;
+        line-height: 200px;
+        margin: 0 auto;
+        border-style: none;
+    }
+
+    #section .withDrawal fieldset li {
+        margin: 0.5rem auto;
+    }
+
+    #section .withDrawal fieldset ul.join_indicator {
+        text-align: left;
+        width: 800px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #section .withDrawal fieldset ul.join_indicator li {
+        display: inline-block;
+        float: left;
+        margin: 0 0.5rem;
+    }
+
+    #section .withDrawal fieldset ul.content {
+        width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #section .withDrawal fieldset ul .supstance textarea {
+        width: 400px;
+        height: 100px;
+        resize: none;
+        vertical-align: text-top;
+    }
+
+    #section .withDrawal fieldset ul.content li.red {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: red;
+        border: 1px solid #999;
+        vertical-align: middle;
+        margin-right: 1rem;
+        box-sizing: border-box;
+    }
+
+    #section .withDrawal fieldset ul.content li.text {
+        width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        text-align: left;
+    }
+
+    #section .withDrawal fieldset ul.content li.supstance {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    input {
+        width: 200px;
+    }
+
+    #section .withDrawal li.form_btn {
+        width: 800px;
+        height: 120px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .form_btn {
+        padding-top: 1rem;
+    }
+
+    button {
+        width: 190px;
+        height: 50px;
+        box-sizing: border-box;
+        margin: 0 2rem;
+    }
+}
+
+/*  모바일 뷰 */
+
+@media all and (max-width: 1319px) {
+
+    html {font-size: 2vw;}
+
+    /* section */
+
+    #section {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section .withDrawal {
+        width: 80%;
+        min-height: 75vh;
+        padding: 10vh 0 0;
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+
+    #section .withDrawal fieldset {
+        width: 100%;
+        margin: 0 auto;
+        border-style: none;
+        text-align: center;
+    }
+
+    #section .withDrawal fieldset legend {
+        width: 100%;
+        height: 5vh;
+        line-height: 5vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    #section .withDrawal fieldset li {
+        margin-top: 1rem;
+        display: inline-block;
+        margin: 0.5rem auto;
+    }
+
+    #section .withDrawal fieldset ul.join_indicator {
+        text-align: left;
+        width: 100%;
+        height: 5vh;
+        line-height: 5vh;
+        margin: 0 auto;
+    }
+
+    #section .withDrawal fieldset ul.join_indicator li {
+        display: inline-block;
+    }
+
+    #section .withDrawal fieldset ul.content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #section .withDrawal fieldset ul.content .colorRed {
+        display: inline-block;
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        background:red;
+        vertical-align: middle;
+        margin-right: 1rem;
+        box-sizing: border-box;
+        font-size: 0;
+    }
+
+    #section .withDrawal fieldset ul.content li.text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        text-align: left;
+    }
+
+    #section .withDrawal fieldset ul.content li.supstance {
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    #section .withDrawal fieldset ul.content li.supstance span {
+        display: block;
+        height: 3vh;
+        line-height: 3vh;
+    }
+
+    input {
+        width: 50vw;
+        height: 3vh;
+        line-height: 3vh;
+        font: 1rem;
+        vertical-align: middle;
+        padding-left: 1vw;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    select {
+        vertical-align: middle;
+        font-size: 1rem;
+        height: 3vh;
+        line-height: 2vh;
+        box-sizing: border-box;
+    }
+
+    #section .withDrawal fieldset ul.content:nth-child(14) .supstance textarea {
+        width: 100%;
+        height: 10vh;
+        resize: none;
+    }
+    
+    #section .withDrawal fieldset ul.content:last-child .supstance textarea {
+        width: 100%;
+        height: 10vh;
+        resize: none;
+    }
+
+    .form_btn {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    .form_btn label ol {
+        width: 80vw;
+        height: 5vh;
+        margin: 1vh auto;
+    }
+    
+    button {
+        width: 80vw;
+        height: 5vh;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin: .5vh 0;
+    }
+}

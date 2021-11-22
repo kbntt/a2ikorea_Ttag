@@ -1,0 +1,304 @@
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* 웹 뷰 */
+
+@media all and (min-width:1320px) {
+
+    html {font-size: 16px;}
+
+    /* section */
+
+    #section {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section .review {
+        width: 1320px;
+        min-height: 80vh;
+        margin: 0 auto;
+        padding: 200px 0 0;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+
+    #section .review fieldset {
+        width: 800px;
+        margin: 0 auto;
+        border-style: none;
+    }
+
+    #section .review fieldset legend {
+        height: 100px;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    #section .review fieldset li {
+        margin: 10px auto;
+    }
+
+    #section .review fieldset ul.content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.text {
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.supstance {
+        width: 500px;
+        display: inline-block;
+        text-align: left;
+        overflow: visible;
+    }
+    input {
+        width: 200px;
+        height: 20px;
+        line-height: 20px;
+        font: 1rem;
+        vertical-align: middle;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    #section .review fieldset ul.content li.supstance input[type="text"] {
+        width: 200px;
+        height: 20px;
+        line-height: 20px;
+        font: 1rem;
+        vertical-align: middle;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="button"] {
+        width: 100px;
+        height: 20px;
+        line-height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .content .supstance .fileBox {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 200px;
+        height: 20px;
+    }
+
+    input.fileShow[type="button"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 100px;
+        height: 20px;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    input.fileHide[type="file"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 100px;
+        height: 20px;
+        font-size: 1rem;
+        padding: 0;
+        opacity: 0;
+    }
+
+    #section .review fieldset ul.content li.supstance textarea {
+        width: 100%;
+        height: 200px;
+        resize: none;
+        box-sizing: border-box;
+        padding: 1vw;
+        vertical-align: text-top;
+        overflow-y: scroll;
+    }
+
+    .form_btn {
+        width: 800px;
+        height: 120px;
+        margin: 50px auto;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .form_btn ol {
+        display: inline-block;
+    }
+    
+    button {
+        width: 190px;
+        height: 50px;
+        box-sizing: border-box;
+        margin: 0 2rem;
+    }
+}
+
+/* 모바일 뷰 */
+
+@media all and (max-width:1319px) {
+
+    html {font-size: 2vw;}
+
+    /* section */
+
+    #section {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    #section .review {
+        width: 100%;
+        min-height: 75vh;
+        padding: 10vh 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+
+    #section .review fieldset {
+        width: 80%;
+        margin: 0 auto;
+        border-style: none;
+        text-align: center;
+    }
+
+    #section .review fieldset legend {
+        width: 100%;
+        height: 5vh;
+        line-height: 5vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    #section .review fieldset li {
+        margin: 0.5rem auto;
+    }
+
+    #section .review fieldset ul.content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.supstance {
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    input {
+        width: 100%;
+        height: 3vh;
+        line-height: 3vh;
+        font: 1rem;
+        vertical-align: middle;
+        padding-left: 1vw;
+        box-sizing: border-box;
+    }
+
+    #section .review fieldset ul.content li.supstance input[type="text"] {
+        width: 100%;
+    }
+
+    #section .review fieldset ul.content li.supstance textarea {
+        width: 100%;
+        height: 20vh;
+        resize: none;
+        vertical-align: text-top;
+    }
+
+    .content .supstance .fileBox {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 3vh;
+        margin: 1vh 0;
+    }
+
+    input.fileHide[type="file"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 20vw;
+        height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+        opacity: 0;
+    }
+
+    input.fileShow[type="button"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 20vw;
+        height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .form_btn {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    .form_btn label ol {
+        width: 80vw;
+        height: 5vh;
+        margin: 1vh auto;
+    }
+    
+    button {
+        width: 80vw;
+        height: 5vh;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin: .5vh 0;
+    }
+}

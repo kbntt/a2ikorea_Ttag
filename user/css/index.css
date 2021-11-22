@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.imgList ul li a {
+    color: #000;
+}
+/* 웹 뷰 */
+
+@media all and (min-width:1320px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    /* section */
+
+    #section {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .main_banner {
+        margin: 0 auto;
+        width: 100%;
+        height: 500px;
+        background-image: url("../images/image04.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.16);
+    }
+
+    .imgList {
+        width: 1320px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .imgList ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imgList ul li {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        margin: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .imgList ul li:nth-child(1) {}
+
+    .imgList ul li:nth-child(2) {}
+
+    .imgList ul li:nth-child(3) {}
+
+    .imgList ul li:nth-child(4) {}
+
+    .ranking {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .ranking .title {
+        width: 1320px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+        box-sizing: border-box;
+    }
+
+    .ranking .content {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 1320px;
+        height: 400px;
+        padding: 1vh;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .ranking .content .conBox01 {
+        width: 250px;
+        height: 400px;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(1) {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ranking .content .conBox01:nth-child(1) ol:nth-child(1) {
+        background-image: url("../images/paint02.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01:nth-child(2) ol:nth-child(1) {
+        background-image: url("../images/paint03.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01:nth-child(3) ol:nth-child(1) {
+        background-image: url("../images/paint04.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01:nth-child(4) ol:nth-child(1) {
+        background-image: url("../images/paint05.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(1) .num {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(2) {
+        width: 250px;
+        height: 150px;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(2) li {
+        width: 100%;
+        height: 50px;
+        line-height: 25px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    .month {
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .month .titleBox {
+        width: 1320px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .month .scrollX {
+        width: 1320px;
+        height: 900px;
+        margin: 0 auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+
+    .month .scrollX .conBox02 {
+        width: 80%;
+        height: 900px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .month .scrollX .conBox02 .imgBox li:nth-child(1) {
+        width: 100%;
+        height: 350px;
+        border-radius: 50px;
+    }
+
+    .month .scrollX .conBox02:nth-child(1) .imgBox li:nth-child(1) {
+        background-image: url("../images/image02.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .month .scrollX .conBox02:nth-child(2) .imgBox li:nth-child(1) {
+        background-image: url("../images/image03.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .month .scrollX .conBox02:nth-child(3) .imgBox li:nth-child(1) {
+        background-image: url("../images/image05.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .month .scrollX .conBox02 .imgBox li:nth-child(2) {
+        padding-left: 10px;
+        color: #000;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .month .scrollX .conBox02 .textBox01 {
+        width: 100%;
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    .month .scrollX .conBox02 .textBox01 li:nth-child(1) {
+        width: 150px;
+        height: 150px;
+        background-image: url("../images/image01.jpg");
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+
+    .month .scrollX .conBox02 .textBox01 li:nth-child(2) {
+        color: #000;
+        padding-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* colorPsychology */
+
+    .colorPsychology {
+        width: 1320px;
+        height: 500px;
+        margin: 0 auto;
+        background-image: url("../images/color.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .colorPsychology .banner  {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .colorPsychology .banner li {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        box-sizing: border-box;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        font-size: 1rem;
+    }
+
+    /* event */
+
+    .event {
+        width: 1320px;
+        height: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px 0;
+    }
+
+    .event ul {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .event ul li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .event ul li img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+
+/* 모바일 뷰 */
+@media all and (max-width:1319px) {
+
+    html {
+        font-size: 2vw;
+    }
+
+    /* section */
+
+    #section {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .main_bg {
+        position: absolute;
+        top: 45vh;
+        left: 0;
+        width: 100%;
+        height: 55vh;
+        background: #4A6572;
+    }
+
+    .main_banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 40vh;
+        background-image: url("../images/image04.jpg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.16);
+    }
+
+    .imgList {
+        position: absolute;
+        width: 100vw;
+        height: 20vh;
+        top: 40vh;
+    }
+
+    .imgList ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imgList ul li {
+        width: 20vw;
+        height: 20vw;
+        line-height: 20vw;
+        border-radius: 5vw;
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        margin: auto;
+        box-sizing: border-box;
+        border: 1px solid #dedede;
+        text-align: center;
+    }
+
+    .imgList ul li:nth-child(1) {}
+
+    .imgList ul li:nth-child(2) {}
+
+    .imgList ul li:nth-child(3) {}
+
+    .imgList ul li:nth-child(4) {}
+
+    .ranking {
+        position: absolute;
+        width: 100vw;
+        height: 35vh;
+        top: 60vh;
+    }
+
+    .ranking .title {
+        width: 100%;
+        height: 3vh;
+        line-height: 3vh;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        box-sizing: border-box;
+        padding-left: 1vh;
+    }
+
+    .ranking .content {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        height: 32vh;
+        padding: 1vh;
+        box-sizing: border-box;
+    }
+
+    .ranking .content .conBox01 {
+        width: 20vh;
+        height: 30vh;
+        display: inline-block;
+        margin-right: 1vh;
+        vertical-align: middle;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(1) {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .ranking .content .conBox01:nth-child(1) ol:nth-child(1) {
+        background-image: url("../images/paint02.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01:nth-child(2) ol:nth-child(1) {
+        background-image: url("../images/paint03.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01:nth-child(3) ol:nth-child(1) {
+        background-image: url("../images/paint04.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01:nth-child(4) ol:nth-child(1) {
+        background-image: url("../images/paint05.jpg");
+        background-size: cover;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(1) .num {
+        width: 3vh;
+        height: 3vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        line-height: 3vh;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(2) {
+        width: 20vh;
+        height: 10vh;
+    }
+
+    .ranking .content .conBox01 ol:nth-child(2) li {
+        width: 100%;
+        height: 3vh;
+        line-height: 3vh;
+        box-sizing: border-box;
+        padding-left: 1vw;
+    }
+
+    .month {
+        position: absolute;
+        width: 100vw;
+        height: 90vh;
+        top: 95vh;
+        background-color: #000;
+    }
+
+    .month .titleBox {
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .month .scrollX {
+        width: 100%;
+        height: 75vh;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        padding: 0 5vw;
+    }
+
+    .month .scrollX .conBox02 {
+        width: 90%;
+        height: 68vh;
+        display: inline-block;
+        margin: 0 2.5vw;
+    }
+
+    .month .scrollX .conBox02 .imgBox li:nth-child(1) {
+        width: 100%;
+        height: 30vh;
+        border-radius: 5vw;
+    }
+
+    .month .scrollX .conBox02:nth-child(1) .imgBox li:nth-child(1) {
+        background-image: url("../images/image02.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .month .scrollX .conBox02:nth-child(2) .imgBox li:nth-child(1) {
+        background-image: url("../images/image03.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .month .scrollX .conBox02:nth-child(3) .imgBox li:nth-child(1) {
+        background-image: url("../images/image05.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .month .scrollX .conBox02 .imgBox li:nth-child(2) {
+        padding-left: 2vw;
+        color: #fff;
+        width: 100%;
+        height: 5vh;
+        line-height: 5vh;
+    }
+
+    .month .scrollX .conBox02 .textBox01 {
+        width: 100%;
+        height: 10vh;
+        margin: 1vh 0;
+    }
+
+    .month .scrollX .conBox02 .textBox01 li:nth-child(1) {
+        width: 10vh;
+        height: 10vh;
+        background-image: url("../images/image01.jpg");
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 5vw;
+    }
+
+    .month .scrollX .conBox02 .textBox01 li:nth-child(2) {
+        color: #fff;
+        padding-left: 2vw;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* colorPsychology */
+
+    .colorPsychology {
+        position: absolute;
+        top: 185vh;
+        width: 100%;
+        height: 45vh;
+        background-image: url("../images/color.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .colorPsychology .banner li {
+        width: 40vw;
+        height: 5vh;
+        line-height: 5vh;
+        text-align: center;
+        border-radius: 5vw;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        box-sizing: border-box;
+        position: absolute;
+        right: 5vw;
+        bottom: 2vh;
+    }
+
+    /* event */
+
+    .event {
+        position: absolute;
+        top: 230vh;
+        width: 100%;
+        height: 20vh;
+        box-sizing: border-box;
+        padding: 2vh 2vw;
+    }
+
+    .event ul {
+        width: 100%;
+        height: 100%;
+        border-radius: 5vw;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .event ul li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .event ul li img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
