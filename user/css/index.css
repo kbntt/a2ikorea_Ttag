@@ -27,6 +27,7 @@ a {
         width: 100%;
         margin: 0 auto;
         position: relative;
+        font-family: 'Jeju Gothic', sans-serif;
     }
 
     .main_banner {
@@ -40,7 +41,7 @@ a {
     }
 
     .imgList {
-        width: 1320px;
+        width: 100%;
         height: 100px;
         margin: 0 auto;
     }
@@ -57,22 +58,28 @@ a {
         width: 100px;
         height: 100px;
         line-height: 100px;
-        border-radius: 5px;
+        border-radius: 0;
         background-size: cover;
         background-position: center;
         display: inline-block;
         margin: auto;
         box-sizing: border-box;
         text-align: center;
+        flex-grow: 1;
     }
 
-    .imgList ul li:nth-child(1) {}
+    .imgList ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: #5b84b1;
+        transition: .5s;
+    }
 
-    .imgList ul li:nth-child(2) {}
-
-    .imgList ul li:nth-child(3) {}
-
-    .imgList ul li:nth-child(4) {}
+    .imgList ul li a:hover {
+        background-color: #294563;
+    }
 
     .ranking {
         width: 100%;

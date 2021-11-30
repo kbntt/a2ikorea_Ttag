@@ -1,8 +1,22 @@
 @charset "utf-8";
 
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@font-face {
+    font-family: 'ROEHOE-CHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jejugothic * { 
+    font-family: 'Jeju Gothic', sans-serif;
+   }
+
 html {
     font-size: 16px;
     width: 100vw;
+    font-family: 'Jeju Gothic', sans-serif;
 }
 * {
     margin: 0;
@@ -30,7 +44,8 @@ a {
         position: sticky;
         top: 0;
         z-index: 100;
-        background-color: rgba(255,255,255,1);
+        box-sizing: border-box;
+        background-color: #99ABBD;
         transition: 0.5s;
         margin: 0 auto;
         overflow: hidden;
@@ -64,11 +79,13 @@ a {
         color: #000;
         font-size: 2rem;
         font-weight: bold;
+        font-family: 'ROEHOE-CHAN';
     }
 
     #header .top_menu {
+        width: 20%;
         height: 100%;
-        display: inline-block;
+        display: flex;
         margin: 0 auto;
         position: absolute;
         top: 0;
@@ -76,39 +93,42 @@ a {
     }
 
     .search_bar {
-        height: 50%;
-        display: inline-block;
-        margin-right: 2vw;
-        border-bottom: 2px solid #666;
-    }
-
-    .search_bar input#searchBar {
-        border: none;
+        width: 80%;
         height: 100%;
-        margin: 0;
-        padding: 10px;
-        vertical-align: middle;
+        display: flex;
+    }
+
+    .search_bar input.searchBar {
+        width: 80%;
+        height: 100px;
+        line-height: 50px;
+        border: 0;
+        padding-left: 10px;
         box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0);
     }
 
-    .search_bar button#searchBar {
-        width: 25px;
-        height: 25px;
+    .search_bar button.searchBarBtn {
+        width: 20%;
+        height: 100%;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search_bar button.searchBarBtn img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        object-position: cover;
+        margin: 0 auto;
         vertical-align: middle;
-        border: none;
-        background-color: #fff;
-    }
-
-    .search_bar button#searchBar img {
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-        object-position: center;
     }
 
     #header .top_menu .top_icon {
         height: 100%;
+        width: 20%;
         display: inline-block;
+        text-align: center;
     }
 
     #header .top_menu .top_icon a {
@@ -118,6 +138,12 @@ a {
         color: #000;
         font-size: 2rem;
         font-weight: bold;
+    }
+
+    /* search */
+
+    .searchBox {
+        display: none;
     }
 
     /* footer */
@@ -255,6 +281,32 @@ a {
         line-height: 10vh;
     }
 
+    /* search */
+
+    .searchBox {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    .searchText {
+        width: 80%;
+        height: 50px;
+        line-height: 50px;
+        border: 0;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    
+    .searchBtn {
+        width: 20%; 
+        height: 50px;
+        border: 0;
+        box-sizing: border-box;
+    }
+
     /* footer */
 
     #footer {
@@ -317,33 +369,9 @@ a {
     position: fixed;
     top: -100vh; 
     left: 0;
-    background-color: #dedede;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 105;
     transition: 0.5s;
-}
-
-.searchBox {
-    width: 50vw;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-}
-
-.searchText {
-    width: 80%;
-    height: 50px;
-    line-height: 50px;
-    border: 0;
-    padding-left: 10px;
-    box-sizing: border-box;
-}
-
-.searchBtn {
-    width: 20%; 
-    height: 50px;
-    border: 0;
-    box-sizing: border-box;
 }
 
 .menu {
@@ -409,6 +437,19 @@ a {
     width: 100px;
     height: 100px;
     border: 0;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #294563;
+    transition: .5s;
+    border: 1px solid #294563;
+    box-sizing: border-box;
+    
+}
+
+.undo .undoBtn:hover {
+    background-color: #99ABBD;
+    color: #fff;
+    border: none;
 }
 
 
