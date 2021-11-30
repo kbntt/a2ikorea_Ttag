@@ -189,6 +189,11 @@ fieldset legend ul li div.setting_box {
     text-align: center;
 }
 
+#btn_box input {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
 #btn_box input[type="submit"] {
     width: 75px;
     height: 25px;

@@ -230,9 +230,13 @@ table tr td.btn {
     text-align: center;
 }
 
+table tr td.btn input {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
 table tr td.btn input[type="button"] {
-    width: 50px;
-    height: 
+    width: 80%;
 }
 
 table tr td.btn input[type="number"] {

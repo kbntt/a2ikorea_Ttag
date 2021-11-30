@@ -21,10 +21,6 @@ li {
   background: #03658c;
 }
 
-div#logo,
-div#login {
-}
-
 div#logo > a {
   font-size: 30px;
   width: 15%;
@@ -250,8 +246,13 @@ select {
   font-size: 18px;
 }
 
+table tr td.btn input {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
 table tr td.btn input[type="button"] {
-  width: 50px;
+  width: 80%;
 }
 
 table tr td.btn input[type="number"] {
