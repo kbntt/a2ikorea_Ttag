@@ -1,8 +1,8 @@
 // header
 
 $(document).ready(function () {
-    $("#headerBox").load("/user/header.html");
-    $("#footerBox").load("/user/footer.html");
+    $("#headerBox").load("../html/header.html");
+    $("#footerBox").load("../html/footer.html");
 });
 
 

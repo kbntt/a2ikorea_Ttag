@@ -1,0 +1,160 @@
+html {font-size: 16px;}
+* {margin: 0; padding: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+
+/* 웹 뷰 */
+@media all and (min-width:768px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    /* section */
+
+    #section {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        align-self: center;
+    }
+    
+    .join {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    
+    .join fieldset {
+        width: 768px;
+        margin: 0 auto;
+        border-style: none;
+    }
+    
+    .join fieldset legend {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    .join fieldset .join_indicator li {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    .join .endJoin li {
+        margin: 5vh auto;
+        font-size: 2rem;
+    }
+
+    .join .endJoin li:nth-child(1) {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .join .endJoin li:nth-child(2) {
+        text-align: center;
+    }
+
+    .form_btn {
+        width: 768px;
+        height: 50px;
+        margin: 50px auto;
+        display: flex;
+    }
+
+    .form_btn ol {
+        width: 100%;
+        height: 50px;
+    }
+    
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+        box-sizing:content-box;
+        border-radius: 0;
+        border: 1px solid #999;
+    }
+}
+
+/* 모바일 뷰 */
+@media all and (max-width:767px) {
+
+    html {
+        font-size: 2vw;
+    }
+
+    /* section */
+
+    #section {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .join {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    
+    .join fieldset {
+        width: 80vw;
+        margin: 0 auto;
+        border-style: none;
+    }
+    
+    .join fieldset legend {
+        width: 100%;
+        height: 5vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    .join fieldset .join_indicator li {
+        display: inline-block;
+    }
+
+    .join .endJoin li {
+        margin: 5vh auto;
+        font-size: 1rem;
+    }
+
+    .join .endJoin li:nth-child(1) {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .join .endJoin li:nth-child(2) {
+        text-align: center;
+    }
+
+    .form_btn {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    .form_btn label ol {
+        width: 80vw;
+        height: 5vh;
+        margin: 1vh auto;
+    }
+    
+    button {
+        width: 80vw;
+        height: 5vh;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin: .5vh 0;
+    }
+}

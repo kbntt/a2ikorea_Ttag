@@ -1,0 +1,12 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@font-face {
+    font-family: 'ROEHOE-CHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jejugothic * { 
+    font-family: 'Jeju Gothic', sans-serif;
+   }

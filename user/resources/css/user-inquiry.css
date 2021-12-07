@@ -1,0 +1,324 @@
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* 웹 뷰 */
+@media all and (min-width:768px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    /* section */
+
+    #section {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section .review {
+        width: 768px;
+        min-height: 80vh;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+
+    #section .review fieldset {
+        width: 768px;
+        margin: 0 auto;
+        border-style: none;
+    }
+
+    #section .review fieldset legend {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    #section .review fieldset li {
+        margin: 10px auto;
+    }
+
+    #section .review fieldset ul.content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.text {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.supstance {
+        width: 100%;
+        text-align: left;
+        display: flex;
+    }
+
+    input {
+        height: 20px;
+        line-height: 20px;
+        font: 1rem;
+        vertical-align: middle;
+        box-sizing: border-box;
+        flex-grow: 1;
+    }
+
+    #section .review fieldset ul.content li.supstance input[type="text"] {
+        height: 50px;
+        font: 1rem;
+        vertical-align: middle;
+        box-sizing: border-box;
+        flex-grow: 1;
+    }
+
+    input[type="button"] {
+        width: 100px;
+        height: 20px;
+        line-height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .content .supstance .fileBox {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100px;
+        height: 50px;
+    }
+
+    input.fileShow[type="button"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    input.fileHide[type="file"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+        padding: 0;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    #section .review fieldset ul.content li.supstance textarea {
+        width: 100%;
+        height: 200px;
+        resize: none;
+        box-sizing: border-box;
+        padding: 1vw;
+        vertical-align: text-top;
+        overflow-y: scroll;
+    }
+
+    .form_btn {
+        width: 768px;
+        height: 50px;
+        margin: 50px auto;
+        display: flex;
+    }
+
+    .form_btn ol {
+        width: 100%;
+        height: 50px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+        box-sizing: content-box;
+        border-radius: 0;
+        border: 1px solid #999;
+    }
+}
+
+/* 모바일 뷰 */
+@media all and (max-width:767px) {
+
+    html {
+        font-size: 2vw;
+    }
+
+    /* section */
+
+    #section {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section .review {
+        width: 100%;
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+
+    #section .review fieldset {
+        width: 80vw;
+        margin: 0 auto;
+        border-style: none;
+    }
+
+    #section .review fieldset legend {
+        width: 100%;
+        height: 5vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    #section .review fieldset li {
+        margin: 0.5rem auto;
+    }
+
+    #section .review fieldset ul.content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        text-align: left;
+    }
+
+    #section .review fieldset ul.content li.supstance {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        overflow: visible;
+        align-content: center;
+
+    }
+
+    .content .supstance .fileBox {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20vw;
+        height: 3vh;
+    }
+
+    input {
+        height: 3vh;
+        line-height: 3vh;
+        font-size: 1rem;
+        vertical-align: middle;
+        padding-left: 1vw;
+        box-sizing: content-box;
+        border: 1px solid #999;
+        flex-grow: 1;
+    }
+
+    #section .review fieldset ul.content li.supstance input[type="text"] {
+        height: 3vh;
+        line-height: 3vh;
+        font: 1rem;
+        vertical-align: middle;
+        padding-left: 1vw;
+        box-sizing: border-box;
+        flex-grow: 1;
+    }
+
+    input[type="button"] {
+        width: 20vw;
+        height: 3vh;
+        line-height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    input.fileHide[type="file"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 20vw;
+        height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+        opacity: 0;
+    }
+
+    input.fileShow[type="button"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: text-top;
+        width: 20vw;
+        height: 3vh;
+        font-size: 1rem;
+        padding: 0;
+        font-size: .5rem;
+    }
+
+    #section .review fieldset ul.content li.supstance textarea {
+        width: 100%;
+        height: 10vh;
+        resize: none;
+        box-sizing: border-box;
+        padding: 1vw;
+        vertical-align: text-top;
+        overflow-y: scroll;
+    }
+
+    .form_btn {
+        width: 80vw;
+        margin: 5vh auto 0;
+    }
+
+    .form_btn label ol {
+        width: 80vw;
+        height: 5vh;
+        margin: 1vh auto;
+    }
+
+    button {
+        width: 80vw;
+        height: 5vh;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin: 0.5vh 0;
+    }
+}
