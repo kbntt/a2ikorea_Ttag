@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@font-face {
+    font-family: 'ROEHOE-CHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jejugothic * { 
+    font-family: 'Jeju Gothic', sans-serif;
+   }
+
+html {
+    font-size: 16px;
+    width: 100vw;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+#header .top_menu .top_icon a:hover {
+    cursor: pointer;
+}
+
+@media all and (min-width:1320px) {
+
+    /* header */
+
+    #header {
+        width: 100%;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-sizing: border-box;
+        background-color: #99ABBD;
+        transition: 0.5s;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #header .btn {
+        width: 1320px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #header .top_logo {
+        height: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 5vw;
+    }
+
+    #header .top_logo .top_logo_text {
+        height: 100%;
+        display: inline-block;
+    }
+
+    .top_logo_text a {
+        display: inline-block;
+        height: 100%;
+        line-height: 100px;
+        color: #000;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'ROEHOE-CHAN';
+    }
+
+    #header .top_menu {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        right: 5vw;
+    }
+
+    .search_bar {
+        width: 80%;
+        height: 100%;
+        display: flex;
+    }
+
+    .search_bar input.searchBar {
+        width: 80%;
+        height: 100px;
+        line-height: 50px;
+        border: 0;
+        padding-left: 10px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search_bar button.searchBarBtn {
+        width: 20%;
+        height: 100%;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search_bar button.searchBarBtn img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        object-position: cover;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    #header .top_menu .top_icon {
+        height: 100%;
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #header .top_menu .top_icon a {
+        display: inline-block;
+        height: 100%;
+        line-height: 100px;
+        color: #000;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    /* search */
+
+    .searchBox {
+        display: none;
+    }
+
+    /* footer */
+
+    #footer {
+        width: 100%;
+        height: 20vh;
+        background: #dedede;
+        font-size: 0.5rem;
+        display: table;
+    }
+
+    .copyWrap {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .copyrightText01 {
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+        color: #666;
+    }
+
+    .copyrightText01 li {
+        margin: 10px auto;
+    }
+
+    .copyrightIcon {
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .icon {
+        height: 100%;
+        line-height: 50px;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .icon img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+    }
+}
+
+@media all and (max-width:1319px) {
+
+    /* header */
+
+    #header {
+        width: 100%;
+        height: 10vh;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(255,255,255,1);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    #header .btn {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #header .top_logo {
+        width: 15vw;
+        height: 100%;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 2vw;
+    }
+
+    #header .top_logo .top_logo_text {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .top_logo_text a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 10vh;
+    }
+
+    #header .top_menu {
+        width: 15vw;
+        height: 100%;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+
+    #header .top_menu .top_icon {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    #header .top_menu .top_icon a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 10vh;
+    }
+
+    /* search */
+
+    .searchBox {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    .searchText {
+        width: 80%;
+        height: 50px;
+        line-height: 50px;
+        border: 0;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    
+    .searchBtn {
+        width: 20%; 
+        height: 50px;
+        border: 0;
+        box-sizing: border-box;
+    }
+
+    /* footer */
+
+    #footer {
+        width: 100%;
+        height: 25vh;
+        background: #dedede;
+        font-size: 0.5rem !important;
+    }
+
+    .copyWrap {
+        width: 100%;
+        height: 25vh;
+        text-align: center;
+        display: table;
+    }
+
+    .copyrightText01 {
+        width: 100%;
+        height: 10vh;
+        display: table-cell;
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .copyrightText01 li {
+        text-align: center;
+        color: #666;
+    }
+
+    .copyrightIcon {
+        width: 100%;
+        height: 5vh;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .icon {
+        height: 100%;
+        line-height: 5vh;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .icon img {
+        width: 5vw;
+        height: 5vw;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+    }
+}
+
+/* menu_section */
+
+.menuSection {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -100vh; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 105;
+    transition: 0.5s;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexMenu {
+    flex: calc(20%);
+    display: inline-block;
+    height: 100px;
+}
+
+.mainMenu {
+    background-color: none;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#dropDown {
+    border: 0;
+    height: 100px;
+}
+
+.supMenu {
+    position: absolute;
+    top: 150px;
+    left: 20vw;
+    width: 20vw;
+    text-align: center;
+    display: none;
+}
+
+.supMenu a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+.mainMenu:hover {
+    background-color: #333;
+}
+
+#dropDown:hover .supMenu {
+    display: block;
+}
+
+.supMenu a:hover {
+    background-color: #666;
+}
+
+.undo {
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+}
+
+.undo .undoBtn {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #294563;
+    transition: .5s;
+    border: 1px solid #294563;
+    box-sizing: border-box;
+    
+}
+
+.undo .undoBtn:hover {
+    background-color: #99ABBD;
+    color: #fff;
+    border: none;
+}
+
+
